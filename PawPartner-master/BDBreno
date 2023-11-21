@@ -1,0 +1,47 @@
+create table usuario(
+    id_dono int not null primary key,
+    Nome varchar(100) not null,
+    Endereço varchar(100) not null,
+    Email varchar(100) not null,
+    Celular int(100) not null,
+    Data_nascimento date(100) not null,
+    Senha_conta varchar(100) not null,
+    Cpf int(100) not null,
+    PRIMARY KEY (id)
+    
+);
+
+create table usuario_instituicao
+    id_usuariofk int not null primary key,
+    id_instituicaofk 
+    primary key (id),
+    foreign key (id_usuariofk) references usuario (id)
+);
+
+create table instituiucao(
+    id_instituicao int unsigned not null,
+    nome varchar (100) not null,
+    endereco varchar (100) not null,
+    email varchar (100) not null,
+    telefone int (10) not null,
+    senha_conta varchar (20) not null,
+    cnpj int (14) not null,
+    primary key (id_instituicao)
+    );
+
+
+create table instituicao_animal (
+     id_instituicaofk int,
+    id_animalfk int,
+    primary key (id),
+    foreign key(id_instituicaofk) references instituicao(id)
+);
+
+create table animal (
+    id_animal int not null,
+    raca varchar (50) not null,
+    especie varchar (50) not null,
+    idade int (11) not null,
+    sexo varchar (20) not null,
+    primary key (id_animal)
+);

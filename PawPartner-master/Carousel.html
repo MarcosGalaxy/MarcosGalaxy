@@ -1,0 +1,47 @@
+</div>
+<div id="grid-pet">
+<div class="grid gap-3 justify-center grid-rows-none sm:gap-4 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
+<div class="flex-1 bg-white rounded-lg shadow-md overflow-hidden">
+// CSS
+https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css
+https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css
+
+<div class="carousel">
+  <div><img src="https://s26.postimg.org/labezuy7d/image.jpg" alt="js" /></div>
+  <div><img src="https://s26.postimg.org/qzrnk64dl/image.jpg" alt="java" /></div>
+  <div><img src="https://s26.postimg.org/uxex9kr6x/image.jpg" alt="python"/></div>
+  <div><img src="https://s26.postimg.org/oas9ge9ih/image.jpg" alt="kotlin" /></div>
+  <div><img src="https://s26.postimg.org/z7tl55wa1/image.jpg" alt="scala" /></div>
+  <div><img src="https://s26.postimg.org/t85u1ibhl/image.jpg" alt="C#" /></div>
+  <div><img src="https://s26.postimg.org/lhz1wd961/image.jpg" alt="PHP" /></div>
+  <div><img src="https://s26.postimg.org/ip5ucc8tl/image.jpg" alt="dotnet" /></div>
+</div>
+
+$('.carousel').slick({
+  dots: true,
+  infinite: true,
+  speed: 500,
+
+<div class="carousel-item">
+  <img src="..." alt="...">
+  <div class="carousel-caption d-none d-md-block">
+    <h5>...</h5>
+    <p>...</p>
+  </div>
+</div>
+  slidesToShow: 4,
+  slidesToScroll: 4,
+});
+
+
+$('#myCarousel').on('slide.bs.carousel', function () {
+  // do something…
+})
+
+.carousel(options)
+Inicializa o carrossel com opções opcionais objecte começa a percorrer os itens.
+
+cópia de
+$('.carousel').carousel({
+  interval: 2000
+})
